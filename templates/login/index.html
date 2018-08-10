@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block title %}主页{% endblock %}
 {% block content %}
     {% if request.session.is_login %}
-    <h1>你好,{{ request.session.user_name }}！欢迎回来！</h1>
+    <h1 style="margin-left: 45%;margin-top: 15%;font-size: 24px">你好,{{ request.session.user_name }}！欢迎回来！</h1>
     {% else %}
-    <h1>请登录！</h1>
+    <h1 style="margin-left: 45%;margin-top: 15%;font-size: 24px">请登录！</h1>
     {% endif %}
 {% endblock %}
